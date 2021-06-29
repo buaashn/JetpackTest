@@ -61,6 +61,9 @@ dependencies {
   implementation(Dependencies.framwork.hilt.hilt)
   kapt(Dependencies.framwork.hilt.hiltCompiler)
 
+  implementation(Dependencies.framwork.rxandroid.rxandroid)
+  implementation(Dependencies.framwork.rxandroid.rxjava)
+
 //    implementation ''
 //    implementation 'com.google.android.material:material:1.0.0'
 //    testImplementation 'junit:junit:4.12'

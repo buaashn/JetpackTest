@@ -11,6 +11,7 @@ class Framework {
   val network = Network()
   val image = Image()
   val hilt = Hilt()
+  val rxandroid = RxAndroid()
 
   inner class Network {
     val okhttp = "com.squareup.okhttp3:okhttp:3.9.1"
@@ -32,6 +33,11 @@ class Framework {
     // 支持 WebP （静态图+动图），需要添加
     val frescoAnimatedWebp = "com.facebook.fresco:animated-webp:$frescoVersion"
     val frescoWebpSupport = "com.facebook.fresco:webpsupport:$frescoVersion"// 仅支持 WebP 静态图，需要添加
+  }
+
+  inner class RxAndroid {
+    val rxandroid = "io.reactivex.rxjava3:rxandroid:3.0.0"
+    val rxjava = "io.reactivex.rxjava3:rxjava:3.0.0"
   }
 
   inner class Androidx {
