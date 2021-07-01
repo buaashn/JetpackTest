@@ -64,6 +64,13 @@ dependencies {
   implementation(Dependencies.framwork.rxandroid.rxandroid)
   implementation(Dependencies.framwork.rxandroid.rxjava)
 
+  implementation(Dependencies.framwork.network.okhttp)
+  implementation(Dependencies.framwork.network.okhttp_interceptor)
+  implementation(Dependencies.framwork.network.retrofit)
+  implementation(Dependencies.framwork.network.retrofit_gson)
+
+  debugImplementation(Dependencies.framwork.leakcanary)
+
 //    implementation ''
 //    implementation 'com.google.android.material:material:1.0.0'
 //    testImplementation 'junit:junit:4.12'

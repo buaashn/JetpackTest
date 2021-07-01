@@ -16,20 +16,20 @@
 
 buildscript {
 
-    repositories {
-        jcenter()
-        google()
-    }
-    dependencies {
-        classpath(Config.BuildPlugins.androidGradle)
-        classpath(Config.BuildPlugins.kotlinGradlePlugin)
-        classpath(Config.BuildPlugins.hiltPlugin)
-    }
+  repositories {
+    jcenter()
+    google()
+  }
+  dependencies {
+    classpath(Config.BuildPlugins.androidGradle)
+    classpath(Config.BuildPlugins.kotlinGradlePlugin)
+    classpath(Config.BuildPlugins.hiltPlugin)
+  }
 }
 
 allprojects {
-    repositories {
-        jcenter()
-        google()
-    }
+  repositories {
+    jcenter()
+    google()
+  }
 }

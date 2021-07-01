@@ -6,6 +6,7 @@ import Config
 class Framework {
   val kotlin_std = "org.jetbrains.kotlin:kotlin-stdlib:${Config.Version.kotlinVersion}"
   val coreKtx = "androidx.core:core-ktx:1.5.0"
+  val leakcanary = "com.squareup.leakcanary:leakcanary-android:2.7"
 
   val androidx = Androidx()
   val network = Network()
@@ -14,10 +15,10 @@ class Framework {
   val rxandroid = RxAndroid()
 
   inner class Network {
-    val okhttp = "com.squareup.okhttp3:okhttp:3.9.1"
-    val okhttp_interceptor = "com.squareup.okhttp3:logging-interceptor:3.9.1"
-    val retrofit = "com.squareup.retrofit2:retrofit:2.3.0"
-    val retrofit_gson = "com.squareup.retrofit2:converter-gson:2.3.0"
+    val okhttp = "com.squareup.okhttp3:okhttp:4.9.1"
+    val okhttp_interceptor = "com.squareup.okhttp3:logging-interceptor:4.9.1"
+    val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
+    val retrofit_gson = "com.squareup.retrofit2:converter-gson:2.9.0"
   }
 
   inner class Image {
