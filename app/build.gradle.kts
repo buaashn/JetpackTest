@@ -68,6 +68,7 @@ dependencies {
   implementation(Dependencies.framwork.network.okhttp_interceptor)
   implementation(Dependencies.framwork.network.retrofit)
   implementation(Dependencies.framwork.network.retrofit_gson)
+  implementation(Dependencies.framwork.network.retrofit_adapter)
 
   debugImplementation(Dependencies.framwork.leakcanary)
 

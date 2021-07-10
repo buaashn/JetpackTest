@@ -1,4 +1,4 @@
-package com.shn.jetpacktest.ui.notifications
+package com.shn.jetpacktest.core.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater

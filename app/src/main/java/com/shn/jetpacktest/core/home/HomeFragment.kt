@@ -1,4 +1,4 @@
-package com.shn.jetpacktest.ui.home
+package com.shn.jetpacktest.core.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.shn.jetpacktest.R
-import com.shn.jetpacktest.ui.webview.WebViewActivity
+import com.shn.jetpacktest.core.webview.WebViewActivity
 
 class HomeFragment : Fragment() {
 

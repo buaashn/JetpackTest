@@ -1,23 +1,16 @@
-package com.shn.jetpacktest.ui.webview;
+package com.shn.jetpacktest.core.webview;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.shn.jetpacktest.R;
 import com.shn.jetpacktest.basic.webview.WebViewPoolManager;
-import com.shn.jetpacktest.ui.home.HomeFragment;
-
-import org.jetbrains.annotations.NotNull;
 
 public class WebViewActivity extends AppCompatActivity {
   private ViewGroup mRootView;

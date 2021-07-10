@@ -1,14 +1,13 @@
-package com.shn.jetpacktest.ui.dashboard
+package com.shn.jetpacktest.core.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import javax.inject.Inject
 
-class DashboardViewModel @Inject constructor() : ViewModel() {
+class HomeViewModel : ViewModel() {
 
   private val _text = MutableLiveData<String>().apply {
-    value = "This is dashboard Fragment"
+    value = "This is home Fragment"
   }
   val text: LiveData<String> = _text
 }

@@ -1,4 +1,4 @@
-package com.shn.jetpacktest.ui.notifications
+package com.shn.jetpacktest.core.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

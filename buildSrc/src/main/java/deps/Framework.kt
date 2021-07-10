@@ -19,6 +19,7 @@ class Framework {
     val okhttp_interceptor = "com.squareup.okhttp3:logging-interceptor:4.9.1"
     val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
     val retrofit_gson = "com.squareup.retrofit2:converter-gson:2.9.0"
+    val retrofit_adapter = "com.squareup.retrofit2:adapter-rxjava3:2.9.0"
   }
 
   inner class Image {
