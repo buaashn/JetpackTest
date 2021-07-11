@@ -1,12 +1,13 @@
 package com.shn.jetpacktest.basic.network;
 
-import java.util.concurrent.TimeUnit;
-import javax.annotation.Nonnull;
-
 import android.content.Context;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import java.util.concurrent.TimeUnit;
+
+import javax.annotation.Nonnull;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -14,10 +15,10 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitManager {
-  private static final long READ_TIMEOUT = 5000L;
-  private static final long WRITE_TIMEOUT = 5000L;
-  private static final long CONNECT_TIMEOUT = 5000L;
-  private static final String BASE_URL = "https://www.v2ex.com/";
+  private static final long READ_TIMEOUT = 15000L;
+  private static final long WRITE_TIMEOUT = 15000L;
+  private static final long CONNECT_TIMEOUT = 15000L;
+  private static final String BASE_URL = "http://www.v2ex.com/";
 
   private static Retrofit retrofit;
 
