@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.shn.jetpacktest.basic.network.RetrofitManager
+import com.tencent.mmkv.MMKV
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
@@ -21,8 +22,9 @@ class MyApplication : Application() {
   override fun onCreate() {
     super.onCreate()
     Fresco.initialize(this)
-    mContext = getApplicationContext();
+    mContext = applicationContext
     RetrofitManager.init(mContext)
+    MMKV.initialize(this)
   }
 
 }

@@ -1,4 +1,6 @@
 import deps.Framework
+import deps.Library
 object Dependencies {
-    val framwork =  Framework()
+    val framework =  Framework()
+    val library = Library()
 }

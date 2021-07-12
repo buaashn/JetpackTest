@@ -40,37 +40,39 @@ android {
 
 dependencies {
   implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-  implementation(Dependencies.framwork.kotlin_std)
-  implementation(Dependencies.framwork.coreKtx)
+  implementation(Dependencies.framework.kotlin_std)
+  implementation(Dependencies.framework.coreKtx)
 
-  implementation(Dependencies.framwork.androidx.appcompat)
-  implementation(Dependencies.framwork.androidx.constrainLayout)
-  implementation(Dependencies.framwork.androidx.recyclerview)
-  implementation(Dependencies.framwork.androidx.navigationFragment)
-  implementation(Dependencies.framwork.androidx.navigationUi)
-  implementation(Dependencies.framwork.androidx.navigationFragmentKtx)
-  implementation(Dependencies.framwork.androidx.navigationUiKtx)
-  implementation(Dependencies.framwork.androidx.lifecycleExtensions)
+  implementation(Dependencies.framework.androidx.appcompat)
+  implementation(Dependencies.framework.androidx.constrainLayout)
+  implementation(Dependencies.framework.androidx.recyclerview)
+  implementation(Dependencies.framework.androidx.navigationFragment)
+  implementation(Dependencies.framework.androidx.navigationUi)
+  implementation(Dependencies.framework.androidx.navigationFragmentKtx)
+  implementation(Dependencies.framework.androidx.navigationUiKtx)
+  implementation(Dependencies.framework.androidx.lifecycleExtensions)
 
-  implementation(Dependencies.framwork.image.fresco)
-  implementation(Dependencies.framwork.image.frescoAnimatedBaseSupport)
-  implementation(Dependencies.framwork.image.frescoAnimatedGif)
-  implementation(Dependencies.framwork.image.frescoAnimatedWebp)
-  implementation(Dependencies.framwork.image.frescoWebpSupport)
+  implementation(Dependencies.framework.image.fresco)
+  implementation(Dependencies.framework.image.frescoAnimatedBaseSupport)
+  implementation(Dependencies.framework.image.frescoAnimatedGif)
+  implementation(Dependencies.framework.image.frescoAnimatedWebp)
+  implementation(Dependencies.framework.image.frescoWebpSupport)
 
-  implementation(Dependencies.framwork.hilt.hilt)
-  kapt(Dependencies.framwork.hilt.hiltCompiler)
+  implementation(Dependencies.framework.hilt.hilt)
+  kapt(Dependencies.framework.hilt.hiltCompiler)
 
-  implementation(Dependencies.framwork.rxandroid.rxandroid)
-  implementation(Dependencies.framwork.rxandroid.rxjava)
+  implementation(Dependencies.framework.rxandroid.rxandroid)
+  implementation(Dependencies.framework.rxandroid.rxjava)
 
-  implementation(Dependencies.framwork.network.okhttp)
-  implementation(Dependencies.framwork.network.okhttp_interceptor)
-  implementation(Dependencies.framwork.network.retrofit)
-  implementation(Dependencies.framwork.network.retrofit_gson)
-  implementation(Dependencies.framwork.network.retrofit_adapter)
+  implementation(Dependencies.framework.network.okhttp)
+  implementation(Dependencies.framework.network.okhttp_interceptor)
+  implementation(Dependencies.framework.network.retrofit)
+  implementation(Dependencies.framework.network.retrofit_gson)
+  implementation(Dependencies.framework.network.retrofit_adapter)
 
-  debugImplementation(Dependencies.framwork.leakcanary)
+  implementation(Dependencies.library.thirdParty.mmkv)
+
+  debugImplementation(Dependencies.framework.leakcanary)
 
 //    implementation ''
 //    implementation 'com.google.android.material:material:1.0.0'

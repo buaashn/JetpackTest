@@ -1,7 +1,9 @@
 package deps
 
 class Library {
-    object ThirdParty {
+  val thirdParty = ThirdParty()
 
-    }
+  inner class ThirdParty {
+    val mmkv = "com.tencent:mmkv-static:1.2.10"
+  }
 }
