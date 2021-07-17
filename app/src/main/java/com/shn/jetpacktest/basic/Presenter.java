@@ -1,40 +1,42 @@
 package com.shn.jetpacktest.basic;
 
-import android.content.Context;
-import android.view.View;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Context;
+import android.view.View;
+import androidx.fragment.app.Fragment;
+
 import io.reactivex.rxjava3.disposables.Disposable;
 
-public class BasePresenter {
+public class Presenter {
   private View mRootView;
-  private final List<BasePresenter> mPresenters = new ArrayList<>();
+  private Fragment mFragment;
+  private final List<Presenter> mPresenters = new ArrayList<>();
   private final List<Disposable> mAutoDisposables = new ArrayList<>();
 
   public void onCreate(View rootView) {
     mRootView = rootView;
-    for (BasePresenter presenter : mPresenters) {
+    for (Presenter presenter : mPresenters) {
       presenter.onCreate(mRootView);
     }
   }
 
   public void onBind() {
-    for (BasePresenter presenter : mPresenters) {
+    for (Presenter presenter : mPresenters) {
       presenter.onBind();
     }
     doBindView(mRootView);
   }
 
   public void onUnBind() {
-    for (BasePresenter presenter : mPresenters) {
+    for (Presenter presenter : mPresenters) {
       presenter.onUnBind();
     }
   }
 
   public void onDestroy() {
-    for (BasePresenter presenter : mPresenters) {
+    for (Presenter presenter : mPresenters) {
       presenter.onDestroy();
     }
     for (Disposable disposable : mAutoDisposables) {
@@ -46,7 +48,18 @@ public class BasePresenter {
 
   }
 
-  public final void addPresenter(BasePresenter presenter) {
+  public Fragment getFragment() {
+    return mFragment;
+  }
+
+  public void setFragment(Fragment fragment) {
+    mFragment = fragment;
+    for (Presenter presenter : mPresenters) {
+      presenter.setFragment(fragment);
+    }
+  }
+
+  public final void addPresenter(Presenter presenter) {
     mPresenters.add(presenter);
   }
 

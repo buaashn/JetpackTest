@@ -1,10 +1,9 @@
 package com.shn.jetpacktest.core.topic;
 
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
+import com.shn.jetpacktest.widget.BaseRefreshFragment;
 
-public class TopicFragment extends Fragment {
-    private RecyclerView mArticleListView;
-
-
+public class TopicFragment extends BaseRefreshFragment {
+  public TopicFragment() {
+    mRootPresenter.addPresenter(new HotTopicPresenter());
+  }
 }
