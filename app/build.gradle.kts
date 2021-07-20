@@ -51,6 +51,12 @@ dependencies {
   implementation(Dependencies.framework.androidx.navigationFragmentKtx)
   implementation(Dependencies.framework.androidx.navigationUiKtx)
   implementation(Dependencies.framework.androidx.lifecycleExtensions)
+  implementation(Dependencies.framework.androidx.paging)
+  implementation(Dependencies.framework.androidx.pagingRxjava)
+  implementation(Dependencies.framework.androidx.roomRuntime)
+  implementation(Dependencies.framework.androidx.roomRxjava)
+  annotationProcessor(Dependencies.framework.androidx.roomCompiler)
+  implementation(Dependencies.framework.androidx.viewpager2)
 
   implementation(Dependencies.framework.image.fresco)
   implementation(Dependencies.framework.image.frescoAnimatedBaseSupport)

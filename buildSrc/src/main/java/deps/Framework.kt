@@ -52,6 +52,12 @@ class Framework {
     val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:2.1.0"
     val material = "com.google.android.material:material:1.0.0"
     val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:2.1.0"
+    val paging = "androidx.paging:paging-runtime:3.0.0"
+    val pagingRxjava = "androidx.paging:paging-rxjava3:3.0.0"
+    val roomRuntime = "androidx.room:room-runtime:2.3.0"
+    val roomCompiler = "androidx.room:room-compiler:2.3.0"
+    val roomRxjava = "androidx.room:room-rxjava3:2.3.0"
+    val viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
   }
 
   inner class Hilt {
