@@ -6,15 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.shn.jetpacktest.R;
 import com.shn.jetpacktest.core.topic.model.TopicModel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class HotTopicAdapter extends RecyclerView.Adapter<HotTopicAdapter.HotTopicViewHolder> {
   private final List<TopicModel> mHotTopics;
@@ -38,7 +39,7 @@ public class HotTopicAdapter extends RecyclerView.Adapter<HotTopicAdapter.HotTop
   @Override
   public HotTopicViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
     return new HotTopicViewHolder(LayoutInflater.from(parent.getContext())
-        .inflate(R.layout.container_hot_topic, parent, false));
+      .inflate(R.layout.container_hot_topic, parent, false));
   }
 
   @Override
@@ -63,7 +64,10 @@ public class HotTopicAdapter extends RecyclerView.Adapter<HotTopicAdapter.HotTop
       mTitle = itemView.findViewById(R.id.title);
     }
 
-    public void bind(TopicModel topicModel) {
+    public void bind(@Nullable TopicModel topicModel) {
+      if (topicModel == null) {
+        return;
+      }
       if (topicModel.mUser != null) {
         Uri uri = Uri.parse(topicModel.mUser.mAvatarNormal);
         mUserAvatar.setImageURI(uri);

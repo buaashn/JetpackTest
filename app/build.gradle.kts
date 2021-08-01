@@ -78,6 +78,9 @@ dependencies {
 
   implementation(Dependencies.library.thirdParty.mmkv)
 
+  implementation(Dependencies.library.bugly.sdk)
+  implementation(Dependencies.library.bugly.ndk)
+
   debugImplementation(Dependencies.framework.leakcanary)
 
 //    implementation ''

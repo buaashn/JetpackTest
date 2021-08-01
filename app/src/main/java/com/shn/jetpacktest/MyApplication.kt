@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.shn.jetpacktest.basic.network.RetrofitManager
+import com.tencent.bugly.crashreport.CrashReport
 import com.tencent.mmkv.MMKV
 import dagger.hilt.android.HiltAndroidApp
 
@@ -25,6 +26,7 @@ class MyApplication : Application() {
     mContext = applicationContext
     RetrofitManager.init(mContext)
     MMKV.initialize(this)
+    CrashReport.initCrashReport(applicationContext, "7cccda9d96", true)
   }
 
 }
