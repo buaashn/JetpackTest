@@ -70,6 +70,11 @@ dependencies {
   implementation(Dependencies.framework.rxandroid.rxandroid)
   implementation(Dependencies.framework.rxandroid.rxjava)
 
+  implementation(Dependencies.framework.rxLifecycle.rxLifecycle)
+  implementation(Dependencies.framework.rxLifecycle.rxLifecycleAndroid)
+  implementation(Dependencies.framework.rxLifecycle.rxLifecycleComponentsPreference)
+  implementation(Dependencies.framework.rxLifecycle.rxLifecycleComponents)
+
   implementation(Dependencies.framework.network.okhttp)
   implementation(Dependencies.framework.network.okhttp_interceptor)
   implementation(Dependencies.framework.network.retrofit)

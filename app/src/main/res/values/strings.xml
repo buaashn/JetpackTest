@@ -3,4 +3,9 @@
   <string name="title_home">Home</string>
   <string name="title_dashboard">Dashboard</string>
   <string name="title_notifications">Notifications</string>
+
+  <string name="input_user_name">请输入账号</string>
+  <string name="input_password">请输入密码</string>
+  <string name="input_check_code">请输入下方验证码</string>
+  <string name="login">登录</string>
 </resources>

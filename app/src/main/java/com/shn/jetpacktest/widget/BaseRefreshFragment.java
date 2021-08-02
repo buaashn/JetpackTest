@@ -9,35 +9,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.shn.jetpacktest.R;
+import com.shn.jetpacktest.basic.BaseFragment;
 import com.shn.jetpacktest.basic.Presenter;
 
-public class BaseRefreshFragment extends Fragment {
-  protected final Presenter mRootPresenter = new Presenter();
-
-  @Nullable
+public class BaseRefreshFragment extends BaseFragment {
   @Override
-  public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-      @Nullable Bundle savedInstanceState) {
-    View rootView = inflater.inflate(R.layout.base_refresh_list_fragment, container, false);
-    mRootPresenter.onCreate(rootView);
-    return rootView;
-  }
-
-  @Override
-  public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-    super.onViewCreated(view, savedInstanceState);
-    mRootPresenter.onBind();
-  }
-
-  @Override
-  public void onStop() {
-    super.onStop();
-    mRootPresenter.onUnBind();
-  }
-
-  @Override
-  public void onDestroyView() {
-    super.onDestroyView();
-    mRootPresenter.onDestroy();
+  protected int getLayoutId() {
+    return R.layout.base_refresh_list_fragment;
   }
 }

@@ -4,6 +4,6 @@ import com.shn.jetpacktest.widget.BaseRefreshFragment;
 
 public class TopicFragment extends BaseRefreshFragment {
   public TopicFragment() {
-    mRootPresenter.addPresenter(new HotTopicPresenter());
+    addPresenter(new HotTopicPresenter());
   }
 }

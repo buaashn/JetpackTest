@@ -13,6 +13,7 @@ class Framework {
   val image = Image()
   val hilt = Hilt()
   val rxandroid = RxAndroid()
+  val rxLifecycle = RxLifecycle()
 
   inner class Network {
     val okhttp = "com.squareup.okhttp3:okhttp:4.9.1"
@@ -63,6 +64,13 @@ class Framework {
   inner class Hilt {
     val hilt = "com.google.dagger:hilt-android:2.28-alpha"
     val hiltCompiler = "com.google.dagger:hilt-android-compiler:2.28-alpha"
+  }
+
+  inner class RxLifecycle{
+    val rxLifecycle = "com.trello.rxlifecycle4:rxlifecycle:4.0.2"
+    val rxLifecycleAndroid = "com.trello.rxlifecycle4:rxlifecycle-android:4.0.2"
+    val rxLifecycleComponents = "com.trello.rxlifecycle4:rxlifecycle-components:4.0.2"
+    val rxLifecycleComponentsPreference = "com.trello.rxlifecycle4:rxlifecycle-components-preference:4.0.2"
   }
 
 }
