@@ -70,7 +70,7 @@
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent" />
 
-  <com.facebook.drawee.view.DraweeView
+  <ImageView
     android:id="@+id/check_code_image"
     android:layout_width="match_parent"
     android:layout_height="56dp"
@@ -84,7 +84,7 @@
     android:gravity="center_vertical"
     app:layout_constraintTop_toBottomOf="@+id/check_code_image">
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <com.google.android.material.textfield.TextInputEditText
       android:id="@+id/check_code"
       android:layout_width="match_parent"
       android:layout_height="56dp"
@@ -107,6 +107,7 @@
     app:layout_constraintRight_toRightOf="parent" />
 
   <TextView
+    android:id="@+id/login"
     android:layout_width="150dp"
     android:layout_height="48dp"
     android:layout_marginTop="6dp"

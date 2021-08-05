@@ -80,8 +80,11 @@ dependencies {
   implementation(Dependencies.framework.network.retrofit)
   implementation(Dependencies.framework.network.retrofit_gson)
   implementation(Dependencies.framework.network.retrofit_adapter)
+  implementation(Dependencies.framework.network.retrofit_scalars)
 
   implementation(Dependencies.library.thirdParty.mmkv)
+  implementation(Dependencies.library.thirdParty.utilcodex)
+  implementation(Dependencies.library.thirdParty.jsoup)
 
   implementation(Dependencies.library.bugly.sdk)
   implementation(Dependencies.library.bugly.ndk)

@@ -21,6 +21,7 @@ class Framework {
     val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
     val retrofit_gson = "com.squareup.retrofit2:converter-gson:2.9.0"
     val retrofit_adapter = "com.squareup.retrofit2:adapter-rxjava3:2.9.0"
+    val retrofit_scalars = "com.squareup.retrofit2:converter-scalars:2.9.0"
   }
 
   inner class Image {
@@ -66,7 +67,7 @@ class Framework {
     val hiltCompiler = "com.google.dagger:hilt-android-compiler:2.28-alpha"
   }
 
-  inner class RxLifecycle{
+  inner class RxLifecycle {
     val rxLifecycle = "com.trello.rxlifecycle4:rxlifecycle:4.0.2"
     val rxLifecycleAndroid = "com.trello.rxlifecycle4:rxlifecycle-android:4.0.2"
     val rxLifecycleComponents = "com.trello.rxlifecycle4:rxlifecycle-components:4.0.2"
